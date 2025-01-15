@@ -39,7 +39,7 @@
 }
 
 .header__navbar-item:hover,
-.header__navbar-icon-linnk:hover,
+.header__navbar-icon-link:hover,
 .header__navbar-item-link:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7);
@@ -68,6 +68,10 @@
 .header__navbar-icon{
     font-size: 1.8rem;
     margin: 0 4px;
+}
+
+.header__navbar-item--has-notify:hover .header__notify{
+    display: block;    
 }
 
 .header__navbar-title--no-pointer{
@@ -115,4 +119,115 @@
 }
 .header__qr-download-img{
     height: 15px;
+}
+
+/* Header notify */
+.header__notify{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 404px;
+    border: 1px solid #d3d3d3;
+    background-color: var(--white-color);
+    cursor: default;
+    transform-origin: calc(100% - 20px) top;
+    animation: headerNotifyGrowth ease-in 0.2s;
+    display: none;
+}
+
+.header__notify::before{
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+}
+
+@keyframes headerNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header__notify-header{
+    height: 40px;
+    background-color: var(--white-color);
+    cursor: text;
+}
+
+.header__notify-header h3{
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    user-select: none;
+}
+
+.header__notify-list{
+    padding-left: 0px;
+
+}
+
+.header__notify-item{
+    display: flex;
+}
+
+.header__notify-item:hover{
+    background-color: #f1f1f1;
+}
+
+.header__notify-item--view{
+    background-color: rgba(238, 75, 43, 0.08);
+}
+
+.header__notify-link{
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+    background-color: rgb(238, 75, 43, 0.01);
+}
+
+.header__notify-img{
+    width: 48px;
+    object-fit: contain;
+}
+
+.header__notify-info{
+    margin-left: 12px;
+}
+
+.header__notify-name{
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400px;
+    line-height: 1.8rem;
+}
+
+.header__notify-desciption{
+    display: block;
+    font-size: 1.4rem;
+    color: #765F6E;
+    margin-top: 4px;
+}
+
+/* Footer */
+.header__notify-footer{
+    display: flex;
+}
+
+.header__notify-footer-btn{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 8px 48px;
+    font-size: 1.6rem;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 400px;
 }
