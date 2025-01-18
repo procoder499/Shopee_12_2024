@@ -67,8 +67,43 @@ html{
     position: relative;
     z-index: 3;
     border-radius: 5px;
+    padding: 30px; 
 }
 
-.modal__inner{
+/* Button style */
 
+.btn{
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--normal:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn--size-s{
+    height: 30px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled{
+    cursor: default;
+    color: #949494;
+    background-color: #c3c3c3;
 }
