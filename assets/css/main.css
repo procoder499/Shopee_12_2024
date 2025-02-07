@@ -1,6 +1,10 @@
 .header {
     height: var(--header-height);
+<<<<<<< HEAD
     /* background-image: linear-gradient(0, #fe6433, #f53e2d); */
+=======
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+>>>>>>> origin/master
 }
 
 .header__navbar{
@@ -867,6 +871,12 @@
     padding: 10px;
     position: relative;
     transition: 0.3s;
+<<<<<<< HEAD
+=======
+    margin-top: 10px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+>>>>>>> origin/master
 }
 
 .home-product-item:hover {
@@ -874,12 +884,15 @@
     transform: translateY(-5px);
 }
 
+<<<<<<< HEAD
 /* Product item */
 .home-product-item{
     background-color: var(--white-color);
     margin-top: 10px;
 }
 
+=======
+>>>>>>> origin/master
 .home-product-item__img{
     padding-top: 100%;
     background-repeat: no-repeat;
@@ -987,9 +1000,15 @@ i.home-product__heart-icon-fill{
     border-bottom-right-radius: 3px;
 }
 .home-product-item__favourite i{
+<<<<<<< HEAD
     font-size: 0.9rem;
     margin: 0 2px 0 5px;
     color: var(--white-color);
+=======
+    color: var(--white-color);
+    font-size: 0.9rem;
+    margin: 0 2px 0 5px;
+>>>>>>> origin/master
 }
 .home-product-item__favourite span{
     color: var(--white-color);
@@ -1001,6 +1020,7 @@ i.home-product__heart-icon-fill{
     bottom: -3px;
     border-top: 3px solid green;
     border-left: 3px solid transparent;
+<<<<<<< HEAD
 }
 .home-product-item__sale-off{
 
@@ -1010,4 +1030,40 @@ i.home-product__heart-icon-fill{
 }
 .home-product-item__sale-off-label{
 
+=======
+    filter: brightness(40%);
+}
+.home-product-item__sale-off{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 36px;
+    background-color: rgba(255, 216, 64, 0.94);
+}
+.home-product-item__sale-off::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-width: 0 20px 4px;
+    border-style: solid;
+    border-color: transparent rgba(255, 216, 64, 0.94) transparent  rgba(255, 216, 64, 0.94);
+}
+.home-product-item__sale-off-percent{
+    color: #EE4D2D;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    position: relative;
+    /* top: -1px; */
+}
+.home-product-item__sale-off-label{
+    color: var(--white-color);
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    position: relative;
+    font-weight: 600;
+    /* top: -10px; */
+>>>>>>> origin/master
 }
